@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Pragprog Books Online </title>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body id="store">
+<body>
   <div class="navbar">
     <div class="navbar-inner">
       <a class="brand" href="#">Depot</a>
@@ -14,15 +14,12 @@
         <li class="active"><%= link_to "Home", store_path %></li>
         <li><%= link_to 'Catlogue', products_path %></li>
         <li><%= link_to 'New Product', new_product_path %></li>
-        <li><a href="#">Link</a></li>
       </ul>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div id="banner">
-        <%= @page_title || "Pragmatic Bookshelf" %>
-      </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+
       <!-- Sidebar Start -->
       <div class="span3">
         <div id="sidebar">
