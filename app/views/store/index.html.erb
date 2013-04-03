@@ -10,7 +10,8 @@
     <h3><%= product.title %></h3>
     <%= sanitize(product.description) %>
     <div class="price_line">
-        <span class="price"><%= product.price %></span>
+        Price : <span class="price"><%= product.price %></span><br>
+        <span class="price"><%= link_to 'More', product %></span>
     </div>
 </div>
 <hr>
